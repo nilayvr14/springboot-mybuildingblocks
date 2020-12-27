@@ -39,7 +39,7 @@ public class UserController {
 		return userService.getAllUsers();
 	}
 	
-	@PostMapping("/createUser")
+	@PostMapping("/users")
 	public ResponseEntity<Void> createUser(@Valid @RequestBody User user, UriComponentsBuilder builder) {
 		try {
 			userService.createUser(user);
